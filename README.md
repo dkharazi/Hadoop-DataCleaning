@@ -1,6 +1,8 @@
 ## Overview
 
-These files clean a small financial dataset using MapReduce. In particular, the goal is to reconstruct missing data from non-trading days (weekends, bank holidays, natural disasters, etc.) by copying values from the previous trading day. The data was scraped from a financial trading site, such as [Yahoo](https://finance.yahoo.com/quote/csv/history/), and can be accessed from [The Ohio State University](http://cse.osu.edu/~sblanas/3244/findata.zip). The zip file should contain files "intc-dividends.csv", "intc-price.csv", "options-price.csv", "spy- dividends.csv", "spy-price.csv". Please put the files in HDFS and place each file in a separate directory.
+These files clean a small financial dataset using MapReduce. In particular, the goal is to reconstruct missing data from non-trading days (weekends, bank holidays, natural disasters, etc.) by copying values from the previous trading day. The data was scraped from a financial trading site, such as [Yahoo](https://finance.yahoo.com/quote/csv/history/), and can be accessed from [The Ohio State University](https://www.osu.edu/). The zip file should contain files "intc-dividends.csv", "intc-price.csv", "options-price.csv", "spy- dividends.csv", "spy-price.csv". Please put the files in HDFS and place each file in a separate directory.
+
+Dataset: [Scraped Trading Data](http://cse.osu.edu/~sblanas/3244/findata.zip) [253 MB]
 
 ## Variable Descriptions
 
