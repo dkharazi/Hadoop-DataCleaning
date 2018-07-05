@@ -11,7 +11,6 @@ The zip file should contain files "intc-dividends.csv", "intc-price.csv", "optio
 
 DataClean1.java is a MapReduce program that cleans the "spy-price.csv" and "intc-price.csv" files between 2015-01-02 and 2016-06-30. These two files have no price for some dates. For example, the last two lines in file "spy-price.csv" are:
 ```
-
 2015-01-05,204.169998,204.369995,201.350006,201.720001,169632600,193.48662
 2015-01-02,206.380005,206.880005,204.179993,205.429993,121465900,197.045185
 ```
@@ -30,7 +29,6 @@ Note that the order the lines appear in the final output does not matter. We onl
 DataClean2.java is a MapReduce program that cleans the "options-price.csv" file between 2015-01-02 and 2016-06-30.
 The "options-price.csv" file is also missing pricing information for some days. However, the "options-price.csv" file is unique in that it stores information a little differently. In particular, it stores symbols for different securities in the same file. Consider the following subset of lines in the "options-price.csv" file:
 ```
-
 2015-01-02,INTC150123C00035000,INTC,2015-01-23,C,35.0,1.77,1.81,1.97
 2015-01-02,SPY170120C00260000,SPY,2017-01-20,C,260.0,2.47,1.91,2.71
 2015-01-05,SPY170120C00260000,SPY,2017-01-20,C,260.0,1.75,1.45,2.32
@@ -39,7 +37,6 @@ The "options-price.csv" file is also missing pricing information for some days. 
 
 The output that reconstructs the missing values would be:
 ```
-
 2015-01-02,INTC150123C00035000,INTC,2015-01-23,C,35.0,1.77,1.81,1.97 2015-01-02,SPY170120C00260000,SPY,2017-01-20,C,260.0,2.47,1.91,2.71 2015-01-03,INTC150123C00035000,INTC,2015-01-23,C,35.0,1.77,1.81,1.97 2015-01-03,SPY170120C00260000,SPY,2017-01-20,C,260.0,2.47,1.91,2.71 2015-01-04,INTC150123C00035000,INTC,2015-01-23,C,35.0,1.77,1.81,1.97 2015-01-04,SPY170120C00260000,SPY,2017-01-20,C,260.0,2.47,1.91,2.71 2015-01-05,SPY170120C00260000,SPY,2017-01-20,C,260.0,1.75,1.45,2.32 2015-01-05,INTC150123C00035000,INTC,2015-01-23,C,35.0,1.77,1.55,1.63
 ```
 
