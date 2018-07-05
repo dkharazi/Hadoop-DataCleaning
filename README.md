@@ -4,13 +4,13 @@ These files clean a small financial dataset using MapReduce. In particular, the 
 
 ## Variable Descriptions
 
-- `Date:` The date 
-- `Open:` The date 
-- `High:` The date 
-- `Low:` The date 
-- `Close:` The date 
-- `Adj_Close:` The date
-- `Volume:` The date 
+- `Date:` The date of record.
+- `Open:` The opening sales price.
+- `High:` The highest sales price that the stock has achieved during the regular trading hours.
+- `Low:` The lowest sales price that the stock has achieved during the regular trading hours.
+- `Close:` The closing sales price that the stock has achieved at the end of the trading session.
+- `Adj_Close:` The adjusted closing price that the stock has achieved at the end of the trading session, which includes any distributions and corporate actions that occurred at any time before the next trading session.
+- `Volume:` The closing daily volume that the stock has achieved at the end of the trading session.
 
 ## File Description for DataClean1.java
 
